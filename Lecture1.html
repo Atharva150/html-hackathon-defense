@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 1</title>
+</head>
+<body>
+
+    <a href="Homepage.html">Back</a>
+
+
+    <h1>Internet</h1>
+
+    <p>Internet cam into Existence , to Make Communications Faster , By Enabling More Complex Connections in Socities , Cities , Countries and In the ENd All over The World</p>
+    <p>The Communication Happens Through Various Sources coming all the way from server , Travelling through Wires from Underseas and Gradually reaching to us .</p>
+    <p>You can actually go the <a href="https://www.submarinecablemap.com/">Submarine Cable Map</a> to see How Wires From All overthe world are Connected From The Seas . </p>
+<br>
+<p>In these Notes , we will see A Couple Of Important Points & Things About The Internet</p>
+
+
+<ol>
+
+<h2><li>Switches</li></h2>
+<p>If we want to Connect and Communicate to other device , What is the most Logical Solution to Connect Them ? Connect them with a USB Stick.</p>
+<p>This works for two computers , but what about when we need to talk to 4 devices between them A , B , C & D , we would need cable from A to B , B to C , C to D , A to C and A to D . What about when we have 100  devices? we'd need  4,950 Cables .</p>
+<p>This is not the optimal Solution , and is not Scalable.</p>
+<p>So they Invented a Central Device which is connected by Everyone and everyone communicates to the Switch and sends the message and Switch sends it to the required Device.</p>
+
+
+
+
+<h2><li>Router</li></h2>
+<p>LAN(Local Area Network) is a Private Small Network , where devices connect to each other . There are Large Number of Networks operating in their own Private Space. So if I want to send a message to another network? </p>
+<p>We need to connect our network to other networks.For this we have a special dedicated Computer to 'route' the traffic . This device is called a Router</p>
+<p>If we want Networks to connect to each other , we Connect the devices to routers . </p>
+<p>This is a Router</p>
+<img src="" alt="">
+
+
+<h2><li>IP Address</li></h2>
+<p>IP is the shortform for The Internet Protocol . This is how your Device gets Recognized overt The Internet . Ipv4 is the Classic IP Address everyone uses. </p>
+<p>IPv4 is a 32-bit number</p>
+<p>Example: 172.217.16.142
+</p>
+<p>A 32-bit bit means it can generate upto 2^32 Possible IP addresses , which is 4.3 Billion .</p>
+
+<p>To solve The Problem of Limited IP Addresses , IPv6 came in.This uses a 128 bit address .</p>
+<p>This means it can generate upto 340 undecillion</p>
+<br>
+
+<p>Types of IP Addresses</p>
+<ul>
+    <li>Private IP Address</li>
+    <li>Public IP Address</li>
+</ul>
+
+
+<h2>Private IP Address</h2>
+<p>A Private IP Address is a IP Address , which is used only within you private network.This is Assigned By Your Router</p>
+<p>Different Devices can have Same Private IP , because they are only used within their network and dont collide with one another</p>
+
+
+
+<h2>Public IP Address</h2>
+<p>This is The IP Address which is global & unique.</p>
+<p>It is Assigned By your ISP(Internet Service Provider)</p>
+<p>Unlike Private IP Addresses , two devices cannot have same Public Ip address at the same time.</p>
+<p>Because its hard to read , it uses hexadecimal number (0-9) and (a-f)</p>
+<p>Example:2001:0db8:85a3:0000:0000:8a2e:0370:7334</p>
+
+
+<h2><li>MAC Address</li></h2>
+<p>MAC(Media Access Control) Address is a unique , permanent IP Address which is embedded into your Hardware </p>
+<p>It is a 48-bit Address.To make it readable for humans, it is written as 12 Hexadecimal numbers. </p>
+<p>Example:3C:22:FB:A3:B4:C5</p>
+<p>How to find MAC Address</p>
+
+
+<h2><li>Port No.</li></h2>
+<p>Port Numbers are numerical identifiers, which are in the range of 0-65535 that specifies a service , application . </p>
+<p>They work with IP Addresses to provide network traffic to a service , to create a Endpoint where users can come .Some of the common are HTTP(port 80) and HTTPS(port 443) </p>
+<p>Categories of Ports:
+    <ol>
+        <li>Well-Known Ports</li>
+        <p>These are reserved for the most common services on the internet such as : </p>
+        <ul>
+            <li>21: FTP (File Transfer Protocol)</li>
+            <li>22:SSH(Secure Shell) -</li>
+            <li>25: SMTP (Simple Mail Transfer Protocol)</li>
+            <li>53: DNS (Domain Name System)</li>
+            <li>80:HTTP(HyperText Transfer Protocol)</li>
+            <li>443:HTTPS(HTTP Secure)</li>
+        </ul>
+
+        <li>Registered Ports</li>
+        <p>These ports are for specific applications or services which we can use to register for our software to avoid conflicts with other services.</p>
+
+        <p>Examples:
+            <ul>
+                <li>3000:Unofficial but most commonly used Port for react and node development servers</li>
+                <li>3306:MySQL Database </li>
+                <li>5432 - Postgres Database</li>
+                <li>27017 - Default for MongoDB</li>
+                <li>8080-Common alternative port for web servers</li>
+            </ul>
+        </p>
+
+
+        <h2><li>DNS</li></h2>
+<p>DNS(Domain Name System) is a System with human-friendly names which has IP Addresses , without this , we would have to memorize all the IP Addresses of the serevers</p>
+        <p>It is Like a Digital Phonebook , Which has IP Addresses of all the systems in the world </p>
+
+        <p>Steps:</p>
+        <ol>
+            <h2><li>Local Cache</li></h2>
+            <p>Before Checking and going global to Search , It checks into its won Local cache , that whether its present or not.
+                <ol>
+                    <li>Browsers keep short-term memory of visited Websites and save the Ip Addresses of the websites</li>
+                    <li>OS(Opearating Systems) also has a cahceh if browser doesn't have it/ </li>
+                    <li>router Cache - Routers also have some cache in their own DNS</li>
+                </ol>
+            </p>
+            <h2><li>Recursive Resolver</li></h2>
+            <p>If the answer is not found , it sends a query to its  Recursive DNS Resolver</p>
+            <p>This is a DNS run by Your own ISP.</p>
+            <p>thsi will recursively search and promises to return what you're looking for. </p>
+            <h2><li>Hierarchical Search</li></h2>
+            <p>The Recursive Resolver doesn't have every IP Address , instead it knows how to navigate . It navigates its way from top to bottom like a hierarchical tree.</p>
+            <ol>
+                <li>The Root Servers</li>
+                <p>It asks to 13 most logical Root servers in the world , where to find the servers that manage the domain.</p>
+                <p>The Root Server returns the Address for The TLD servers.</p>
+                <li>TLD(top-level Domain) Servers</li>
+                <p>It again asks the same Question to TLD , and TLD returns not teh actual IP Address , but says "I know who does." The Authoritative Name Server</p>
+                <li>The Authoritative Server</li>
+                <p>The Resolver asks for teh IP address and this returns teh actual IP Address.</p>
+            </ol>
+            <h2><li>Journey Back</li></h2>
+            <p>The Authoritative name Server gives The IP address to the Recursive Resolver and it saves it in the local cache , for a period fo time called TTL(Time-to-Live). If anyone asks for the website in the next few hours. It can return it immediately. </p>
+            <p>Recursive resolver sends The IP address to the computer's OS which gives it to the Browser. </p>
+            <h2><li>Final Connection</li></h2>
+            <p>Now the browser has the actual IP address . It can now open the connection and send a request.</p>
+        </ol>
+    </ol>
+</p>
+
+
+<a href="Lecture2.html">Next</a>
+
+
+
+</ol>
+</body>
+</html>

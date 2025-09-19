@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 3</title>
+</head>
+<body>
+      <a href="Homepage.html">HomePage</a> <br>
+      <a href="Lecture2.html">Back</a>
+
+    <h1>Lecture 3 Notes</h1>
+
+    <h2>Tables</h2>
+
+    <p>To create table in html we use the <strong>&lt;table&gt;</strong> tag.</p>
+    <p>Inside table tag , we use &lt;tr&gt; to create a new row , and inside new row , we use &lt;td&gt; to insert items into them.</p>
+    <p>To specify header , we use &lt;th&gt; tag</p>
+    <p>Example:
+        <br>
+         &lt;table&gt;
+            <br>
+            &lt;tr&gt;
+            &lt;td&gt; Mango &lt;/td&gt
+            <br>
+            &lt;td&gt; Orange &lt;/td&gt
+            <br>
+            &lt;td&gt; Banana &lt;/td&gt
+            <br>
+            &lt;/tr&gt
+    </p>
+
+    <p>Generally , we use the notations like thead , tbody and tfoot in tables to make code Readable and understand whats going.</p>
+    <p>thead-Declared in Header , to specify what is the header</p>
+    <p>tbody-the actual content of the table </p>
+    <p>tfoot-to add the conclusion</p>
+
+    <p>How can we create table like this?</p>
+    <img src="" alt="">
+
+    <p>For that we have colspan and rowspan</p>
+    <p>rowspan is for how many rows we want that cell to take , and colspan is for how many columns that cell should take.</p>
+
+    <p>For Example:
+        <br>
+
+<table border="1">
+    <tr>
+      <th>Day</th>
+      <th>9-10</th>
+      <th>10-11</th>
+      <th>11-12</th>
+    </tr>
+    <tr>
+      <td rowspan="2">Monday</td>
+      <td>Math</td>
+      <td colspan="2">Science Lab</td>
+    </tr>
+    <tr>
+      <td>English</td>
+      <td>History</td>
+      <td>Geography</td>
+    </tr>
+    <tr>
+      <td>Tuesday</td>
+      <td colspan="3">Sports Day</td>
+    </tr>
+  </table>
+    </p>
+
+    <p>the code for the above is:</p>
+
+    &lt;table border="1"&gt;<br>
+    &lt;tr&gt;<br>
+      &lt;th&gt;Day&lt;/th&gt;<br>
+      &lt;th&gt;9-10&lt;/th&gt;<br>
+      &lt;th&gt;10-11&lt;/th&gt;<br>
+      &lt;th&gt;11-12&lt;/th&gt;<br>
+    &lt;/tr&gt;<br>
+    &lt;tr&gt;<br>
+      &lt;td rowspan="2"&gt;Monday&lt;/td&gt;<br>
+      &lt;td&gt;Math&lt;/td&gt;<br>
+      &lt;td colspan="2"&gt;Science Lab&lt;/td&gt;<br>
+    &lt;/tr&gt;<br>
+    &lt;tr&gt;<br>
+      &lt;td&gt;English&lt;/td&gt;<br>
+      &lt;td&gt;History&lt;/td&gt;<br>
+      &lt;td&gt;Geography&lt;/td&gt;<br>
+    &lt;/tr&gt;<br>
+    &lt;tr&gt;<br>
+      &lt;td&gt;Tuesday&lt;/td&gt;<br>
+      &lt;td colspan="3"&gt;Sports Day&lt;/td&gt;<br>
+    &lt;/tr&gt;<br>
+  &lt;/table&gt;<br>
+
+<a href="Lecture4.html">Next Lecture</a>
+
+
+
+
+
+
+</body>
+</html>

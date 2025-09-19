@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 2</title>
+</head>
+<body>
+
+      <a href="Homepage.html">HomePage</a> <br>
+      <a href="Lecture1.html">Back</a>
+
+    <h1>HTML Lecture 1 Notes</h1>
+
+    <h2>HTML</h2>
+    <p>HTML Stands for <strong>HyperText Markup Language</strong>. It is The Skeleton of a Website. </p>
+
+    <h2>HTML Tags</h2>
+    <p>We Use tags to define content in HTML.</p>
+    <p>In this Lecture Notes,we're going to see:
+        <ol>
+            <li>Headings</li>
+            <li>p tag</li>
+            <li>Lists</li>
+            <li>anchor tag</li>
+            <li>br</li>
+            <li>hr</li>
+            <li>Image tag</li>
+        </ol>
+    </p>
+
+    <ol>
+    <h2><li>Headings</h2></li>
+    <p>To define Header Tags , there are h1 to h8 tags , h1 being given the highest importance and h6 the least.</p>
+
+    <p>We can define these as Follows:</p>
+    <ol>
+    <li><p>&lt;h1&gt (content) &lt;/h1&gt</p></li>
+    <li><p>&lt;h2&gt (content) &lt;/h2&gt</p></li>
+    <li><p>&lt;h3&gt (content) &lt;/h3&gt</p></li>
+    <li><p>&lt;h4&gt (content) &lt;/h4&gt</p></li>
+    <li><p>&lt;h5&gt (content) &lt;/h5&gt</p></li>
+    <li><p>&lt;h6&gt (content) &lt;/h6&gt</p></li>
+    </ol>
+
+    <h2><li>p tag(Paragraph)</li></h2>
+
+    <p>This is used to group Sentences Together in the form of a paragraph . Without Paragraph The code looks Dirty.</p>
+
+    <p>The Browsers automatically add a little bit of Line Space Before & after p tag . We should not use Multiple Line Breaks, We Should use Multiple p tags</p>
+    &lt;p&gt (content) &lt;/p&gt
+
+    <h2><li>Lists</li></h2>
+    <p>There are Two Types of Lists:
+        <ol>
+            <li>Ordered List</li>
+            <li>Unordered List</li>
+        </ol>
+    </p>
+    <p> li-List Item &lt;li&gt; (item) &lt;/li&gt</p>
+
+    <ol>
+    <h2><li>Ordered List</li></h2>
+    <p>This looks Like this: <strong>&lt;ol&gt; (content) &lt;/ol&gt</strong></p>
+    <p>This creates a Numbering List</p>
+        <p>Example:
+            &lt;ol&gt;
+            <br>
+            &lt;li&gt; Mango &lt;/li&gt
+            <br>
+            &lt;li&gt; Orange &lt;/li&gt
+            <br>
+            &lt;li&gt; Banana &lt;/li&gt
+            <br>
+            &lt;/ol&gt
+        </p>
+
+
+
+
+    <h2><li>Unordered List</li></h2>
+    <p>This looks Like this: <strong>&lt;ul&gt; (content) &lt;/ul&gt</strong></p>
+    <p>It Creates new Bullet Points</p>
+    </ol>
+
+    <p>Example:
+            &lt;ul&gt;
+            <br>
+            &lt;li&gt; Mango &lt;/li&gt
+            <br>
+            &lt;li&gt; Orange &lt;/li&gt
+            <br>
+            &lt;li&gt; Banana &lt;/li&gt
+            <br>
+            &lt;/ul&gt
+        </p>
+
+
+
+        <h2>Nested List</h2>
+        <p>Nested Lists looks like this :</p>
+          <ul>
+    <h2><li>Frontend </h2><ul>
+        <li>HTML</li>
+        <li>CSS <ul><li>onsubmit attribute</li>
+        <li>onclick attribute </li>
+        </ul></li>
+        <li>Javascript</li>
+    </ul></li>
+
+    <li><h2>Library/Framework</h2> <ul>
+        <li>ReactJS <ul>
+            <li>Hoisting</li>
+            <li>Props</li>
+        </ul></li>
+    </ul>
+ </ul>
+
+
+        <p>To create Nested List , we have to add a list inside another list , and it is done as follows: </p>
+
+        &lt;ul&gt;<br>
+    &lt;h2&gt;&lt;li&gt;Frontend &lt;/h2&gt;&lt;ul&gt;<br>
+        &lt;li&gt;HTML&lt;/li&gt;<br>
+        &lt;li&gt;CSS &lt;ul&gt;&lt;li&gt;onsubmit attribute&lt;/li&gt;<br>
+        &lt;li&gt;onclick attribute &lt;/li&gt;<br>
+        &lt;/ul&gt;&lt;/li&gt;<br>
+        &lt;li&gt;Javascript&lt;/li&gt;<br>
+    &lt;/ul&gt;&lt;/li&gt;<br>
+<br>
+    &lt;li&gt;&lt;h2&gt;Library/Framework&lt;/h2&gt; &lt;ul&gt; and add a br after every new line<br>
+<br>
+        &lt;li&gt;ReactJS &lt;ul&gt;<br>
+            &lt;li&gt;Hoisting&lt;/li&gt;<br>
+            &lt;li&gt;Props&lt;/li&gt;<br>
+        &lt;/ul&gt;&lt;/li&gt;<br>
+    &lt;/ul&gt;<br>
+&lt;/ul&gt;<br>
+
+        <h2><li>Anchor tag</li></h2>
+        <p>Anchor tag is used to Link html Page to Another Page</p>
+        <p>Is is defined using <strong>&lt;a href=(link)&gt; (content) &lt;/a&gt</strong></p>
+        <p>Example:
+            <br>
+            &lt;a href=ww.google.com&gt;Google &lt;/a&gt
+        </p>
+
+
+        <h2><li>br(Line Break)</li></h2>
+        <p>This is used to add a line break , After a content , because html doesn't add a new line after each content , we have o use either a line break , or Block Elements , which are elements that always start on a new line. </p>
+        <p>br is a self-closing tag</p>
+        <p>You can add Muliple Line Breaks to add more space</p>
+        <p>This is just used like &lt;/br&gt</p>
+
+        <h2><li>hr</li></h2>
+        <p>This tag is used to add a Horizontal Line To Separate Contents from each Other.</p>
+
+
+        <h2><li>Image tag</li></h2>
+        <p>this tag is used to add Images</p>
+        <p> <strong>&lt;image src = (link) alt=""&gt </strong></p>
+        <p>You can either give the Link from The local , Or from The Internet</p>
+        <p>alt is the text to Show in case the image doesn't get Displayed , the user knows whats the is image about</p>
+
+        <a href="Lecture3.html">Next</a>
+
+</ol>
+</body>
+</html>
